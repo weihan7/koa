@@ -48,6 +48,7 @@ You can also use the [env preset](http://babeljs.io/docs/plugins/preset-env/) wi
 
   The obligatory hello world application:
 
+<!-- runkit:endpoint -->
 ```js
 const Koa = require('koa');
 const app = new Koa();
@@ -74,6 +75,7 @@ app.listen(3000);
   middleware to execute downstream, the stack will unwind and each middleware is resumed to perform
   its upstream behaviour.
 
+<!-- runkit:endpoint -->
 ```js
 const Koa = require('koa');
 const app = new Koa();
@@ -165,7 +167,7 @@ https.createServer(app.callback()).listen(3001);
 
  Set signed cookie keys.
 
- These are passed to [KeyGrip](https://github.com/jed/keygrip),
+ These are passed to [KeyGrip](https://github.com/crypto-utils/keygrip),
  however you may also pass your own `KeyGrip` instance. For
  example the following are acceptable:
 
